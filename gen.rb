@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
-100.times {
+200.times {
   name = "noise_" + rand(2**10).to_s(16) + ".txt"
-  File.open(name, "w"){|f| f.write(rand(2**20000).to_s(2)) }
+  File.open(name, "w"){|f| f.write(rand(2**30000).to_s(2)) }
   puts "Added #{name}"
 }
 
