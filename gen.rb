@@ -2,7 +2,7 @@
 
 100.times {
   name = "noise_" + rand(2**128).to_s(16) + ".txt"
-  File.open(name, "w"){|f| f.write(rand(2**100000).to_s(2)) }
+  File.open(name, "w"){|f| f.write(rand(2**30000).to_s(2)) }
   puts "Added #{name}"
 }
 
